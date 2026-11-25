@@ -7,89 +7,89 @@
 
     <style>
         body {
-            /* background */
+            background-color:bisque;
             background-image: url("images/pexels-marble.jpg");
             background-size:cover;
-            /* font */
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            margin: auto;
+            margin: 0;
+        }
 
-            header {
-                width: 100%;
-                text-align: center;
-                color: white;
-                background-color: #1b1a21;
-                background-size: cover;
-                padding-block: 20px ;
+        header {
+            width:100%;
+            text-align: center;
+            color: white;
+            background-color: #1b1a21;
+            background-size: cover;
+            padding-block: 20px ;
 
-            }  
-            h1 {font-size: xx-large;}
-            h3 {
-                font-size: x-large;
-                text-align: center;
-                background-color: #ae6f47;
-                padding-block: 20px;
-                margin-top: 50px;
-            }
-            h4{
-                font-size: larger;
-                padding-block: 20px;
-                margin-top: 40px;
-                text-align: center;
-            }
+        }  
 
-            h5 {
-                font-size: large;
-            }
-            .main-nav {
-                font-size: large;
-                text-align:left;
-                padding-top: 20px;
-                padding-bottom: 40px;
+        h1 {font-size: xx-large;}
 
-            }
+        h3 {
+            font-size: x-large;
+            text-align: center;
+            background-color: #ae6f47;
+            padding-block: 20px;
+            margin-top: 50px;
+        }
 
-            mark {
-                background-color:#d5cbc3;
-                padding:20px;
-                border: black groove 5px;
-            }
+        h4 {
+            font-size: larger;
+            padding-block: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
 
-            .gallery-item {
-                text-align:center;
-                border: goldenrod groove 15px;
-                margin: 10px;
-            }
-            .painting {
-                margin-top: 20px;
-                max-width: 300px;
-                height: auto;
-            }
-
-            .photo {
-                margin-top: 20px;
-                max-height: 400px;
-                width: auto;
-            }
-
-            .main-grid {
-            display: grid;
-            grid-template-columns: 25% auto;    
-            }
-
-            .image-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);    
-            }
-            .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);    
-            }
+        h5 {
+            font-size: large;
+        }
         
+        .main-nav {
+            font-size: large;
+            text-align:left;
+            padding-top: 20px;
+            padding-bottom: 40px;
 
         }
 
-      /* Part 2 CSS should all be within this tag. */
+        mark {
+            background-color:#d5cbc3;
+            padding:20px;
+            border: black groove 5px;
+        }
+
+        .gallery-item {
+            text-align:center;
+            border: goldenrod groove 15px;
+            margin: 10px;
+        }
+
+        .painting {
+            margin-top: 20px;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .photo {
+            margin-top: 20px;
+            max-height: 400px;
+            width: auto;
+        }
+
+        .main-grid {
+        display: grid;
+        grid-template-columns: 25% auto;    
+        }
+
+        .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);    
+        }
+        .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);    
+        }
         
     </style>
 
@@ -231,12 +231,41 @@
             <h3 id="original-works">Original Artwork</h3>
             <div class="photo-grid">
                 <div class="gallery-item">
+                    <svg 
+                    viewBox="0 0 300 300" 
+                    xmlns="http://www.w3.org/2000/svg" class ="photo">
+                    <circle cx=150 cy=150 r=100 fill="white" stroke="black" />
+                    <circle cx=150 cy=150 r=80 fill="black" />
+                    <circle cx=150 cy=150 r=60 fill="cyan" />
+                    <circle cx=150 cy=150 r=40 fill="red" />
+                    <circle cx=150 cy=150 r=20 fill="yellow" />
+                        <!-- your SVG will go here -->
+        
+                    </svg>
+                    <h5>A Dartboard</h5>      
+                    <p>November 2026</p>   
+                </div>
+
+                <div class="gallery-item">
+                    <svg 
+                    viewBox="0 0 300 300" 
+                    xmlns="http://www.w3.org/2000/svg" class ="photo">
+                    <rect x=110 y=190 width="80" height="90" fill="tan" />
+                    <polygon points="150,100 90,200 210,200" fill="brown" />
+                    <rect x=130 y=220 width="40" height="60" fill="black" />
+                    <circle cx=140 cy=250 r="5" fill="gold"/>
+                    </svg>
+
+                    <h5>A House</h5>      
+                    <p>November 2026</p>   
+                </div>
+
+                <div class="gallery-item">
                     <img src="images/norway_foggy.png" 
                     alt="Foggy roadway in Trollstigen, Norway" class="photo">
                     <h5>Trollstigen, Norway</h5>      
                     <p>July 2022</p>      
                 </div>
-
 
                 <div class="gallery-item">
                     <img src="images/norway_yellowboat.HEIC" 
@@ -267,7 +296,6 @@
         </main>
     </div>
 
-<!-- Part 1 Content should all be within the body -->
 
 </body>
 </html>
