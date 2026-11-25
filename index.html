@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lab</title>
+
+    <style>
+        body {
+            /* background */
+            background-image: url("images/pexels-marble.jpg");
+            background-size:cover;
+            /* font */
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: auto;
+
+            header {
+                width: 100%;
+                text-align: center;
+                color: white;
+                background-color: #1b1a21;
+                background-size: cover;
+                padding-block: 20px ;
+
+            }  
+            h1 {font-size: xx-large;}
+            h3 {
+                font-size: x-large;
+                text-align: center;
+                background-color: #ae6f47;
+                padding-block: 20px;
+                margin-top: 50px;
+            }
+            h4{
+                font-size: larger;
+                padding-block: 20px;
+                margin-top: 40px;
+                text-align: center;
+            }
+
+            h5 {
+                font-size: large;
+            }
+            .main-nav {
+                font-size: large;
+                text-align:left;
+                padding-top: 20px;
+                padding-bottom: 40px;
+
+            }
+
+            mark {
+                background-color:#d5cbc3;
+                padding:20px;
+                border: black groove 5px;
+            }
+
+            .gallery-item {
+                text-align:center;
+                border: goldenrod groove 15px;
+                margin: 10px;
+            }
+            .painting {
+                margin-top: 20px;
+                max-width: 300px;
+                height: auto;
+            }
+
+            .photo {
+                margin-top: 20px;
+                max-height: 400px;
+                width: auto;
+            }
+
+            .main-grid {
+            display: grid;
+            grid-template-columns: 25% auto;    
+            }
+
+            .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);    
+            }
+            .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);    
+            }
+        
+
+        }
+
+      /* Part 2 CSS should all be within this tag. */
+        
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Les Trois Grandes Dames ("The Three Great Ladies") of Impressionism
+        </h1> 
+        <h2>Marie Bracquemond, Mary Cassatt, and Berthe Morisot</h2>
+    </header>
+
+    <div class="main-grid">
+        <nav class="main-nav">
+            <h2>Navigation</h2>
+            <ul><li><a href="#impressionist-works">Impressionist Artwork</a></li>
+                <ul>
+                    <li><a href="#mb">Marie Bracquemond</a></li>
+                    <li><a href="#mc">Mary Cassatt</a></li>
+                    <li><a href="#bm">Berthe Morisot</a></li>
+                </ul>
+            <li><a href="#original-works">Original Artwork</a></li></ul>
+        </nav>
+
+        <main>
+            <h3 id="impressionist-works">Impressionist Artwork</h3>
+
+    <!------------------------------ Marie Bracquemond ---------------------------->
+            <h4 id= "mb"><mark>Marie Bracquemond</mark></h4>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <img src="images/Lady_in_White_(La_Dame_en_Blanc).jpg" 
+                    alt="The Lady in White/La Dame en blanc by Marie Bracquemond" class="painting">            
+                    <h5>
+                        <a href="https://www.musee-orsay.fr/en/artworks/la-dame-en-blanc-69671"
+                        >The Lady in White/La Dame en blanc</a>
+                    </h5>
+                    <p> circa 1880</p>
+
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image_bracquemond_marie_nee_marie_anne_caroline_pasquiou-quivoron_le_gouter_ppp636_585627.jpg" 
+                    alt="Afternoon Tea/Le Goûter by Marie Bracquemond" class="painting">            
+                    <h5>
+                        <a href="https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/le-gouter#infos-principales "
+                        >Afternoon Tea/Le Goûter</a>
+                    </h5>
+                    <p> circa 1880</p>           
+
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Marie_Bracquemond_Trois_femmes.jpg" 
+                    alt="Three Women with Parasols/Trois Femmes aux Ombrelles by Marie Bracquemond" 
+                    class="painting">            
+                    <h5>
+                        <a href="https://www.musee-orsay.fr/en/artworks/trois-femmes-aux-ombrelles-78037"
+                        >Three Women with Parasols/Trois Femmes aux Ombrelles </a>
+                    </h5>
+                    <p> circa 1840-1916</p>
+
+                </div>
+            </div>
+
+    <!-------------------------------- Mary Cassatt ------------------------------->
+            <h4 id="mc"><mark>Mary Cassatt</mark></h4>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <img src="images/little_girl_in_a_blue_armchair_1983.1.18.jpg" 
+                    alt="Little Girl in a Blue Armchair by Mary Cassatt" class="painting">
+                    <h5>
+                        <a href="https://www.nga.gov/artworks/61368-little-girl-blue-armchair"
+                        >Little Girl in a Blue Armchair</a>
+                    </h5>
+                    <p> circa 1878 </p>
+
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/the_boating_party_1963.10.94.jpg" 
+                    alt="The Boating Party by Mary Cassatt" class="painting">            
+                    <h5>
+                        <a href="https://www.nga.gov/artworks/46569-boating-party"
+                        >The Boating Party</a>
+                    </h5>
+                    <p> circa 1893 </p>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="images/1922.421 - Mother's Goodnight Kiss.jpg" 
+                    alt="Mother’s Goodnight Kiss by Mary Cassatt" class="painting">          
+                    <h5>
+                        <a href="https://www.artic.edu/artworks/81527/mother-s-goodnight-kiss"
+                        >Mother’s Goodnight Kiss</a>
+                    </h5>
+
+                    <p> circa 1888 </p>
+                </div>
+            </div>
+    <!------------------------------- Berthe Morisot------------------------------->
+            <h4 id="bm"><mark>Berthe Morisot</mark></h4>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <img src="images/1924.127 - Woman at Her Toilette.jpg" 
+                    alt="Woman at Her Toilette by Berthe Morisot" class="painting">            
+                    <h5>
+                        <a href="https://www.artic.edu/artworks/11723/woman-at-her-toilette"
+                        >Woman at Her Toilette</a>
+                    </h5>
+                    <p> circa 1875-80 </p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/the_mother_and_sister_of_the_artist_1963.10.186.jpg" 
+                    alt="The Mother and Sister of the Artist by Berthe Morisot" class="painting">            
+                    <h5>
+                        <a href="https://www.nga.gov/artworks/46661-mother-and-sister-artist"
+                        >The Mother and Sister of the Artist</a>
+                    </h5>
+
+                    <p> circa 1869-70 </p>
+                </div>
+
+                
+                <div class="gallery-item">
+                    <img src="images/girl_in_a_boat_with_geese_1970.17.50.jpg" 
+                    alt="Girl in a Boat with Geese by Berthe Morisot" class="painting">            
+                    <h5>
+                        <a href="https://www.nga.gov/artworks/52194-girl-boat-geese"
+                        >Girl in a Boat with Geese</a>
+                    </h5>
+
+                    <p> circa 1889 </p>
+                </div>
+            </div>
+
+    <!------------------------------ Original Artwork------------------------------>
+            <h3 id="original-works">Original Artwork</h3>
+            <div class="photo-grid">
+                <div class="gallery-item">
+                    <img src="images/norway_foggy.png" 
+                    alt="Foggy roadway in Trollstigen, Norway" class="photo">
+                    <h5>Trollstigen, Norway</h5>      
+                    <p>July 2022</p>      
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="images/norway_yellowboat.HEIC" 
+                    alt="Glacial lake with yellow boat in Norway" class="photo">
+                    <h5>A Glacial Lake in Norway</h5>       
+                    <p>July 2022</p>     
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="images/smokies_tower.jpg" 
+                    alt="Worm's eye view of a watch tower in the Smoky Mountains" class="photo">
+                    <h5>Watch Tower in the Great Smoky Mountains National Park, 
+                        North Carolina, USA</h5>    
+                    <p>October 2022</p>        
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/yellowstone_bison.HEIC" 
+                    alt="Open pasture with two bison in the early morning at Yellowstone 
+                    National Park" 
+                    class="photo">            
+                    <h5>Bison at Sunrise, Yellowstone National Park, Wyoming, USA</h5>
+                    <p>July 2021</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+<!-- Part 1 Content should all be within the body -->
+
+</body>
+</html>
